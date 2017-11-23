@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenutipoCalles.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frmMenutipoCalles" %>
+<%@ Register src="../../Controles/Catalogos/Padron/CtrMenutipoCalle.ascx" tagname="CtrMenutipoCalle" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/CtrMenutipoCalle.ascx" tagname="CtrMenutipoCalle" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <uc2:CtrMenutipoCalle ID="CtrMenutipoCalle1" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+</asp:Content>

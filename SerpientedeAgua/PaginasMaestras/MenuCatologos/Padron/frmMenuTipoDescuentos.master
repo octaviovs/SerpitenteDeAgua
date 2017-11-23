@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuTipoDescuentos.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frmMenuTipoDescuentos" %>
+
+<%@ Register src="../../../Controles/Catalogos/Padron/ctnMenuTipoDescuentos.ascx" tagname="ctnMenuTipoDescuentos" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      
+        <uc2:ctnMenuTipoDescuentos ID="ctnMenuTipoDescuentos1" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+      
+    </asp:ContentPlaceHolder>
+</asp:Content>

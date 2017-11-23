@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuDiametro.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frmMenuDiametro" %>
+<%@ Register src="../../Controles/Catalogos/Padron/ctrMenuDiametros.ascx" tagname="ctrMenuDiametros" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/ctrMenuDiametros.ascx" tagname="ctrMenuDiametros" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc2:ctrMenuDiametros ID="ctrMenuDiametros1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

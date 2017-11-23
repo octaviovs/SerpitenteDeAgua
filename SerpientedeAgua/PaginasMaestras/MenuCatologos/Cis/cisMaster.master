@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="cisMaster.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.MenuCatologos.Cis.cisMaster" %>
+
+<%@ Register Src="~/Controles/Catalogos/Cis/cisMenu.ascx" TagPrefix="uc1" TagName="cisMenu" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:cismenu runat="server" id="cisMenu" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder2">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>

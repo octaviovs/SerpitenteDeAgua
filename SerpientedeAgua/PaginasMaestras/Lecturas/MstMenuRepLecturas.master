@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="MstMenuRepLecturas.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Lecturas.MstMenuRepLecturas" %>
+<%@ Register src="../../Controles/Paginas/Lecturas/ctnMenuRepLect.ascx" tagname="ctnMenuRepLect" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:ctnMenuRepLect ID="ctnMenuRepLect1" runat="server" />
+    </asp:ContentPlaceHolder>
+</asp:Content>

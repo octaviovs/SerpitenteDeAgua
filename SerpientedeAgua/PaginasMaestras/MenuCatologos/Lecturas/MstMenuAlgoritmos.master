@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="MstMenuAlgoritmos.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.MenuCatologos.Lecturas.MstMenuAlgoritmos" %>
+<%@ Register src="../../../Controles/Catalogos/Lecturas/CtnMenuAlgoritmos.ascx" tagname="CtnMenuAlgoritmos" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:CtnMenuAlgoritmos ID="CtnMenuAlgoritmos1" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <p>
+                &nbsp;</p>
+        </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+</asp:Content>

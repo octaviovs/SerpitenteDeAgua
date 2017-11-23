@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="FrmMenuEstados.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.FrmMenuEstados" %>
+<%@ Register src="../../Controles/Catalogos/Padron/CtnMenuEstados.ascx" tagname="CtnMenuEstados" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/CtnMenuEstados.ascx" tagname="CtnMenuEstados" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc2:CtnMenuEstados ID="CtnMenuEstados1" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+</asp:Content>

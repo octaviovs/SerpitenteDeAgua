@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuConceptos.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.MenuCatologos.Conceptos.frmMenuConceptos" %>
+<%@ Register src="../../../Controles/Catalogos/Conceptos/MenuConceptos.ascx" tagname="MenuConceptos" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:MenuConceptos ID="MenuConceptos1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

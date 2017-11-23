@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30725E79-72DF-40F7-B468-1BA6D53B35E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SerpientedeAgua</RootNamespace>
+    <AssemblyName>SerpientedeAgua</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/f7e1d585-6b6d-4c62-9a1a-bccdd313593c/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/SerpientedeAgua</ApplicationInsightsResourceId>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Controles\Catalogos\Cfdi\CntMenuFormasdepago.ascx" />
+    <Content Include="Controles\Catalogos\Cis\Alta.ascx" />
+    <Content Include="Controles\Catalogos\Cis\cisMenu.ascx" />
+    <Content Include="Controles\Catalogos\Cis\CtnMenuCIS.ascx" />
+    <Content Include="Controles\Catalogos\Cis\ctnMenuPersonal.ascx" />
+    <Content Include="Controles\Catalogos\Conceptos\CtnMenuCargos.ascx" />
+    <Content Include="Controles\Catalogos\Conceptos\CtnMenuContable.ascx" />
+    <Content Include="Controles\Catalogos\Lecturas\CntMenuLecturista.ascx" />
+    <Content Include="Controles\Catalogos\Lecturas\CtnMenuAlgoritmos.ascx" />
+    <Content Include="Controles\Catalogos\Padron\cntlMenuMatCalle.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CntMenuServicio.ascx" />
+    <Content Include="Controles\Catalogos\Padron\cntMenuSocioe.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuColonia.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtnMenuEstados.ascx" />
+    <Content Include="Controles\Catalogos\Conceptos\ctnMenuRubros.ascx" />
+    <Content Include="Controles\Catalogos\Conceptos\MenuConceptos.ascx" />
+    <Content Include="Controles\Catalogos\Lecturas\CntMenuSituacion.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CntnTipoServicio.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtmMenuCalle.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtnMenuCaracter.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuComunidades.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuFracciona.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuGiros.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtnMenuMunicipios.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtnMenuRegiones.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuRutas.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtnMenuTipoContrato.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuTipoDescuentos.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenutipoMed.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctnMenuUbiMed.ascx" />
+    <Content Include="Controles\Catalogos\Padron\ctrMenuDiametros.ascx" />
+    <Content Include="Controles\Catalogos\Padron\CtrMenutipoCalle.ascx" />
+    <Content Include="Controles\Catalogos\Padron\MenuMarcasMedidor.ascx" />
+    <Content Include="Controles\Catalogos\Sistema\CntMenusOficinas.ascx" />
+    <Content Include="Controles\Catalogos\Sistema\ctnMenuCatCajas.ascx" />
+    <Content Include="Controles\Paginas\Cajas\Cntmenucajas.ascx" />
+    <Content Include="Controles\Paginas\Cajas\CntMenuConfcaja.ascx" />
+    <Content Include="Controles\Paginas\Cis\CntMenuRepOrd.ascx" />
+    <Content Include="Controles\Paginas\Cis\CtnMenuCis.ascx" />
+    <Content Include="Controles\Paginas\Cobranza\CntMenuCobranza.ascx" />
+    <Content Include="Controles\Paginas\Cobranza\CtnMenuAvisos.ascx" />
+    <Content Include="Controles\Paginas\Empresa\CntAltaEmpresa.ascx" />
+    <Content Include="Controles\Paginas\Empresa\CntListaEmpresa.ascx" />
+    <Content Include="Controles\Paginas\Empresa\CntMenuEmpresa.ascx" />
+    <Content Include="Controles\Paginas\Lecturas\ctnMenuConsumos.ascx" />
+    <Content Include="Controles\Paginas\Lecturas\CtnMenuhidro.ascx" />
+    <Content Include="Controles\Paginas\Lecturas\ctnMenuRepLect.ascx" />
+    <Content Include="Controles\Paginas\Lecturas\MenuLecturas.ascx" />
+    <Content Include="Controles\Paginas\Padron\CtnMenuCatalogoGeo.ascx" />
+    <Content Include="Controles\Paginas\Padron\CtnMenuNoUsuarios.ascx" />
+    <Content Include="Controles\Paginas\Padron\CtnMenuPad.ascx" />
+    <Content Include="Controles\Paginas\Padron\CtnMenuRepPad.ascx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Serpiente\Simbologia-Azteca-4.jpg" />
+    <Content Include="PaginasMaestras\Empresa\Mstmenuempresa.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Cfdi\MstMenuFormadepago.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Cis\frmMenuCIS.master" />
+    <Content Include="PaginasMaestras\Lecturas\frmMenuConsumos.master" />
+    <Content Include="Controles\Catalogos\Sistema\CtlMenuUsuariosSist.ascx" />
+    <Content Include="PaginasMaestras\Padron\FrmMenuCatalogoGeo.master" />
+    <Content Include="PaginasMaestras\Padron\FrmMenuPad.master" />
+    <Content Include="PaginasMaestras\Padron\FrmMenuRepPad.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Sistema\MtrMenuCatCajas.master" />
+    <Content Include="PaginasMaestras\Lecturas\fromMenuLecturas.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmTipoServicio.master" />
+    <Content Include="PaginasMaestras\Cajas\frmMenuConfCaja.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuCaracter.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuComunidadesMaster.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuConceptos.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Cis\cisMaster.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoDescuentos.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuCalle.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Conceptos\FrmMenuCargos.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuUbiMed.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuRubros.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuSituacion.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuEstados.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenutipoCalles.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuDiametro.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuMunicipios.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuRegiones.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuColonia.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\MstMenuRutas.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuFracciona.master" />
+    <Content Include="PaginasMaestras\Lecturas\frmMenuhidro.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Cis\frmMenuPersonalmaster.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuMatCalle.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuGiros.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\MstMenuServicio.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frrMenutipoMed.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoContrato.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Lecturas\FrmMenuLecturista.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Sistema\MstMenuUsuariosSist.master" />
+    <Content Include="PaginasMaestras\Padron\FrmMenuNoUsuario.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Sistema\frmMenuOficinas.master" />
+    <Content Include="PaginasMaestras\Cobranza\FrmMenuAvisos.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuAlgoritmos.master" />
+    <Content Include="PaginasMaestras\Cis\MstMenuRepOrd.master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\MstMenuMarcasMedidor.master" />
+    <Content Include="PaginasMaestras\Lecturas\frmMenuReptLect.Master" />
+    <Content Include="PaginasMaestras\MenuCatologos\Padron\frmMenuSocioe.master" />
+    <Content Include="PaginasMaestras\Lecturas\MstMenuRepLecturas.master" />
+    <Content Include="PaginasMaestras\Cis\MstMenuOrdenes.master" />
+    <Content Include="PaginasMaestras\Cajas\frmmenucajas.master" />
+    <Content Include="PaginasMaestras\Cobranza\MstMenuCobranza.master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="images\Serpiente\alt-atlachinoli fuego toma 3.png" />
+    <Content Include="images\Serpiente\alt-atlachinoli fuego toma 4.png" />
+    <Content Include="images\Serpiente\alt-atlachinoli fuego toma 5.png" />
+    <Content Include="images\Serpiente\alt-atlachinoli fuego toma 6.png" />
+    <Content Include="images\Serpiente\altlachinoli normal.png" />
+    <Content Include="images\Serpiente\atl toma 1.png" />
+    <Content Include="images\Serpiente\atl.png" />
+    <Content Include="images\Serpiente\chinoli.bmp" />
+    <Content Include="images\Serpiente\chinoli.png" />
+    <Content Include="images\Serpiente\tlachinolli invertido.ico" />
+    <Content Include="images\Serpiente\tlachinolli invertido.png" />
+    <Content Include="images\Serpiente\tlachinolli manualidades inclinacion 130 del terminado 3.png" />
+    <Content Include="images\Serpiente\tlachinolli manualidades.png" />
+    <Content Include="images\Serpiente\tlachinolli piel de elefante.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado 2.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado manualidades psicodelico.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado psicodelico 1.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado psicodelico 2.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado psicodelico 3.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado psicodelico y piel de lefante.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado puras lineas.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado sepia.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado x.png" />
+    <Content Include="images\Serpiente\tlachinolli terminado.png" />
+    <Content Include="images\tlalineas.png" />
+    <Content Include="Paginas\Catalogos\Cis\AltaCis.aspx" />
+    <Content Include="Paginas\Empresa\Wbflistarempresa.aspx" />
+    <Content Include="Paginas\Empresa\WbfRegistrarempresa.aspx" />
+    <Content Include="Paginas\Lecturas\Exportar.aspx" />
+    <Content Include="Paginas\Lecturas\Importar.aspx" />
+    <Content Include="Paginas\Lecturas\Ordenes .aspx" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="PaginasMaestras\Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="PaginasMaestras\Site.Mobile.Master" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Clases\Basededatos\ClsBase.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cfdi\CntMenuFormasdepago.ascx.cs">
+      <DependentUpon>CntMenuFormasdepago.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cfdi\CntMenuFormasdepago.ascx.designer.cs">
+      <DependentUpon>CntMenuFormasdepago.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\Alta.ascx.cs">
+      <DependentUpon>Alta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\Alta.ascx.designer.cs">
+      <DependentUpon>Alta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\cisMenu.ascx.cs">
+      <DependentUpon>cisMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\cisMenu.ascx.designer.cs">
+      <DependentUpon>cisMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\CtnMenuCIS.ascx.cs">
+      <DependentUpon>CtnMenuCIS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\CtnMenuCIS.ascx.designer.cs">
+      <DependentUpon>CtnMenuCIS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\ctnMenuPersonal.ascx.cs">
+      <DependentUpon>ctnMenuPersonal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\ctnMenuPersonal.ascx.designer.cs">
+      <DependentUpon>ctnMenuPersonal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\CtnMenuCargos.ascx.cs">
+      <DependentUpon>CtnMenuCargos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\CtnMenuCargos.ascx.designer.cs">
+      <DependentUpon>CtnMenuCargos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\CtnMenuContable.ascx.cs">
+      <DependentUpon>CtnMenuContable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\CtnMenuContable.ascx.designer.cs">
+      <DependentUpon>CtnMenuContable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CntMenuLecturista.ascx.cs">
+      <DependentUpon>CntMenuLecturista.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CntMenuLecturista.ascx.designer.cs">
+      <DependentUpon>CntMenuLecturista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CtnMenuAlgoritmos.ascx.cs">
+      <DependentUpon>CtnMenuAlgoritmos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CtnMenuAlgoritmos.ascx.designer.cs">
+      <DependentUpon>CtnMenuAlgoritmos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\cntlMenuMatCalle.ascx.cs">
+      <DependentUpon>cntlMenuMatCalle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\cntlMenuMatCalle.ascx.designer.cs">
+      <DependentUpon>cntlMenuMatCalle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CntMenuServicio.ascx.cs">
+      <DependentUpon>CntMenuServicio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CntMenuServicio.ascx.designer.cs">
+      <DependentUpon>CntMenuServicio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\cntMenuSocioe.ascx.cs">
+      <DependentUpon>cntMenuSocioe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\cntMenuSocioe.ascx.designer.cs">
+      <DependentUpon>cntMenuSocioe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuColonia.ascx.cs">
+      <DependentUpon>ctnMenuColonia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuColonia.ascx.designer.cs">
+      <DependentUpon>ctnMenuColonia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuEstados.ascx.cs">
+      <DependentUpon>CtnMenuEstados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuEstados.ascx.designer.cs">
+      <DependentUpon>CtnMenuEstados.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\ctnMenuRubros.ascx.cs">
+      <DependentUpon>ctnMenuRubros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\ctnMenuRubros.ascx.designer.cs">
+      <DependentUpon>ctnMenuRubros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\MenuConceptos.ascx.cs">
+      <DependentUpon>MenuConceptos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Conceptos\MenuConceptos.ascx.designer.cs">
+      <DependentUpon>MenuConceptos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CntMenuSituacion.ascx.cs">
+      <DependentUpon>CntMenuSituacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Lecturas\CntMenuSituacion.ascx.designer.cs">
+      <DependentUpon>CntMenuSituacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CntnTipoServicio.ascx.cs">
+      <DependentUpon>CntnTipoServicio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CntnTipoServicio.ascx.designer.cs">
+      <DependentUpon>CntnTipoServicio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtmMenuCalle.ascx.cs">
+      <DependentUpon>CtmMenuCalle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtmMenuCalle.ascx.designer.cs">
+      <DependentUpon>CtmMenuCalle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuCaracter.ascx.cs">
+      <DependentUpon>CtnMenuCaracter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuCaracter.ascx.designer.cs">
+      <DependentUpon>CtnMenuCaracter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuComunidades.ascx.cs">
+      <DependentUpon>ctnMenuComunidades.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuComunidades.ascx.designer.cs">
+      <DependentUpon>ctnMenuComunidades.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuFracciona.ascx.cs">
+      <DependentUpon>ctnMenuFracciona.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuFracciona.ascx.designer.cs">
+      <DependentUpon>ctnMenuFracciona.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuGiros.ascx.cs">
+      <DependentUpon>ctnMenuGiros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuGiros.ascx.designer.cs">
+      <DependentUpon>ctnMenuGiros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuMunicipios.ascx.cs">
+      <DependentUpon>CtnMenuMunicipios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuMunicipios.ascx.designer.cs">
+      <DependentUpon>CtnMenuMunicipios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuRegiones.ascx.cs">
+      <DependentUpon>CtnMenuRegiones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuRegiones.ascx.designer.cs">
+      <DependentUpon>CtnMenuRegiones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuRutas.ascx.cs">
+      <DependentUpon>ctnMenuRutas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuRutas.ascx.designer.cs">
+      <DependentUpon>ctnMenuRutas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuTipoContrato.ascx.cs">
+      <DependentUpon>CtnMenuTipoContrato.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtnMenuTipoContrato.ascx.designer.cs">
+      <DependentUpon>CtnMenuTipoContrato.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuTipoDescuentos.ascx.cs">
+      <DependentUpon>ctnMenuTipoDescuentos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuTipoDescuentos.ascx.designer.cs">
+      <DependentUpon>ctnMenuTipoDescuentos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenutipoMed.ascx.cs">
+      <DependentUpon>ctnMenutipoMed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenutipoMed.ascx.designer.cs">
+      <DependentUpon>ctnMenutipoMed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuUbiMed.ascx.cs">
+      <DependentUpon>ctnMenuUbiMed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctnMenuUbiMed.ascx.designer.cs">
+      <DependentUpon>ctnMenuUbiMed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctrMenuDiametros.ascx.cs">
+      <DependentUpon>ctrMenuDiametros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\ctrMenuDiametros.ascx.designer.cs">
+      <DependentUpon>ctrMenuDiametros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtrMenutipoCalle.ascx.cs">
+      <DependentUpon>CtrMenutipoCalle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\CtrMenutipoCalle.ascx.designer.cs">
+      <DependentUpon>CtrMenutipoCalle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\MenuMarcasMedidor.ascx.cs">
+      <DependentUpon>MenuMarcasMedidor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Padron\MenuMarcasMedidor.ascx.designer.cs">
+      <DependentUpon>MenuMarcasMedidor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\CntMenusOficinas.ascx.cs">
+      <DependentUpon>CntMenusOficinas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\CntMenusOficinas.ascx.designer.cs">
+      <DependentUpon>CntMenusOficinas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\ctnMenuCatCajas.ascx.cs">
+      <DependentUpon>ctnMenuCatCajas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\ctnMenuCatCajas.ascx.designer.cs">
+      <DependentUpon>ctnMenuCatCajas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cajas\Cntmenucajas.ascx.cs">
+      <DependentUpon>Cntmenucajas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cajas\Cntmenucajas.ascx.designer.cs">
+      <DependentUpon>Cntmenucajas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cajas\CntMenuConfcaja.ascx.cs">
+      <DependentUpon>CntMenuConfcaja.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cajas\CntMenuConfcaja.ascx.designer.cs">
+      <DependentUpon>CntMenuConfcaja.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cis\CntMenuRepOrd.ascx.cs">
+      <DependentUpon>CntMenuRepOrd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cis\CntMenuRepOrd.ascx.designer.cs">
+      <DependentUpon>CntMenuRepOrd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cis\CtnMenuCis.ascx.cs">
+      <DependentUpon>CtnMenuCis.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cis\CtnMenuCis.ascx.designer.cs">
+      <DependentUpon>CtnMenuCis.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cobranza\CntMenuCobranza.ascx.cs">
+      <DependentUpon>CntMenuCobranza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cobranza\CntMenuCobranza.ascx.designer.cs">
+      <DependentUpon>CntMenuCobranza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cobranza\CtnMenuAvisos.ascx.cs">
+      <DependentUpon>CtnMenuAvisos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Cobranza\CtnMenuAvisos.ascx.designer.cs">
+      <DependentUpon>CtnMenuAvisos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntAltaEmpresa.ascx.cs">
+      <DependentUpon>CntAltaEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntAltaEmpresa.ascx.designer.cs">
+      <DependentUpon>CntAltaEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntListaEmpresa.ascx.cs">
+      <DependentUpon>CntListaEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntListaEmpresa.ascx.designer.cs">
+      <DependentUpon>CntListaEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntMenuEmpresa.ascx.cs">
+      <DependentUpon>CntMenuEmpresa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\CntMenuEmpresa.ascx.designer.cs">
+      <DependentUpon>CntMenuEmpresa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Empresa\ValuesController1.cs" />
+    <Compile Include="Controles\Paginas\Lecturas\ctnMenuConsumos.ascx.cs">
+      <DependentUpon>ctnMenuConsumos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\ctnMenuConsumos.ascx.designer.cs">
+      <DependentUpon>ctnMenuConsumos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\CtnMenuhidro.ascx.cs">
+      <DependentUpon>CtnMenuhidro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\CtnMenuhidro.ascx.designer.cs">
+      <DependentUpon>CtnMenuhidro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\ctnMenuRepLect.ascx.cs">
+      <DependentUpon>ctnMenuRepLect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\ctnMenuRepLect.ascx.designer.cs">
+      <DependentUpon>ctnMenuRepLect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\MenuLecturas.ascx.cs">
+      <DependentUpon>MenuLecturas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Lecturas\MenuLecturas.ascx.designer.cs">
+      <DependentUpon>MenuLecturas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuCatalogoGeo.ascx.cs">
+      <DependentUpon>CtnMenuCatalogoGeo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuCatalogoGeo.ascx.designer.cs">
+      <DependentUpon>CtnMenuCatalogoGeo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuNoUsuarios.ascx.cs">
+      <DependentUpon>CtnMenuNoUsuarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuNoUsuarios.ascx.designer.cs">
+      <DependentUpon>CtnMenuNoUsuarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuPad.ascx.cs">
+      <DependentUpon>CtnMenuPad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuPad.ascx.designer.cs">
+      <DependentUpon>CtnMenuPad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuRepPad.ascx.cs">
+      <DependentUpon>CtnMenuRepPad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Paginas\Padron\CtnMenuRepPad.ascx.designer.cs">
+      <DependentUpon>CtnMenuRepPad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PaginasMaestras\Cajas\frmmenucajas.master.cs">
+      <DependentUpon>frmmenucajas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cajas\frmmenucajas.master.designer.cs">
+      <DependentUpon>frmmenucajas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cajas\frmMenuConfCaja.master.cs">
+      <DependentUpon>frmMenuConfCaja.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cajas\frmMenuConfCaja.master.designer.cs">
+      <DependentUpon>frmMenuConfCaja.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cis\MstMenuOrdenes.master.cs">
+      <DependentUpon>MstMenuOrdenes.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cis\MstMenuOrdenes.master.designer.cs">
+      <DependentUpon>MstMenuOrdenes.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cis\MstMenuRepOrd.master.cs">
+      <DependentUpon>MstMenuRepOrd.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cis\MstMenuRepOrd.master.designer.cs">
+      <DependentUpon>MstMenuRepOrd.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cobranza\FrmMenuAvisos.master.cs">
+      <DependentUpon>FrmMenuAvisos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cobranza\FrmMenuAvisos.master.designer.cs">
+      <DependentUpon>FrmMenuAvisos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cobranza\MstMenuCobranza.master.cs">
+      <DependentUpon>MstMenuCobranza.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Cobranza\MstMenuCobranza.master.designer.cs">
+      <DependentUpon>MstMenuCobranza.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Empresa\Mstmenuempresa.master.cs">
+      <DependentUpon>Mstmenuempresa.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Empresa\Mstmenuempresa.master.designer.cs">
+      <DependentUpon>Mstmenuempresa.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuConsumos.master.cs">
+      <DependentUpon>frmMenuConsumos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuConsumos.master.designer.cs">
+      <DependentUpon>frmMenuConsumos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuhidro.master.cs">
+      <DependentUpon>frmMenuhidro.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuhidro.master.designer.cs">
+      <DependentUpon>frmMenuhidro.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuReptLect.Master.cs">
+      <DependentUpon>frmMenuReptLect.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\frmMenuReptLect.Master.designer.cs">
+      <DependentUpon>frmMenuReptLect.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\fromMenuLecturas.master.cs">
+      <DependentUpon>fromMenuLecturas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\fromMenuLecturas.master.designer.cs">
+      <DependentUpon>fromMenuLecturas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cfdi\MstMenuFormadepago.master.cs">
+      <DependentUpon>MstMenuFormadepago.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cfdi\MstMenuFormadepago.master.designer.cs">
+      <DependentUpon>MstMenuFormadepago.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\cisMaster.master.cs">
+      <DependentUpon>cisMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\cisMaster.master.designer.cs">
+      <DependentUpon>cisMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\frmMenuCIS.master.cs">
+      <DependentUpon>frmMenuCIS.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\frmMenuCIS.master.designer.cs">
+      <DependentUpon>frmMenuCIS.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\frmMenuPersonalmaster.master.cs">
+      <DependentUpon>frmMenuPersonalmaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Cis\frmMenuPersonalmaster.master.designer.cs">
+      <DependentUpon>frmMenuPersonalmaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\FrmMenuCargos.master.cs">
+      <DependentUpon>FrmMenuCargos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\FrmMenuCargos.master.designer.cs">
+      <DependentUpon>FrmMenuCargos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuConceptos.master.cs">
+      <DependentUpon>frmMenuConceptos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuConceptos.master.designer.cs">
+      <DependentUpon>frmMenuConceptos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuRubros.master.cs">
+      <DependentUpon>frmMenuRubros.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Conceptos\frmMenuRubros.master.designer.cs">
+      <DependentUpon>frmMenuRubros.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\FrmMenuLecturista.master.cs">
+      <DependentUpon>FrmMenuLecturista.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\FrmMenuLecturista.master.designer.cs">
+      <DependentUpon>FrmMenuLecturista.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuAlgoritmos.master.cs">
+      <DependentUpon>MstMenuAlgoritmos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuAlgoritmos.master.designer.cs">
+      <DependentUpon>MstMenuAlgoritmos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\MstMenuRepLecturas.master.cs">
+      <DependentUpon>MstMenuRepLecturas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Lecturas\MstMenuRepLecturas.master.designer.cs">
+      <DependentUpon>MstMenuRepLecturas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuSituacion.master.cs">
+      <DependentUpon>MstMenuSituacion.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Lecturas\MstMenuSituacion.master.designer.cs">
+      <DependentUpon>MstMenuSituacion.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuCalle.master.cs">
+      <DependentUpon>frmMenuCalle.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuCalle.master.designer.cs">
+      <DependentUpon>frmMenuCalle.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuColonia.master.cs">
+      <DependentUpon>frmMenuColonia.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuColonia.master.designer.cs">
+      <DependentUpon>frmMenuColonia.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuDiametro.master.cs">
+      <DependentUpon>frmMenuDiametro.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuDiametro.master.designer.cs">
+      <DependentUpon>frmMenuDiametro.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuEstados.master.cs">
+      <DependentUpon>FrmMenuEstados.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuEstados.master.designer.cs">
+      <DependentUpon>FrmMenuEstados.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuFracciona.master.cs">
+      <DependentUpon>frmMenuFracciona.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuFracciona.master.designer.cs">
+      <DependentUpon>frmMenuFracciona.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuGiros.master.cs">
+      <DependentUpon>frmMenuGiros.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuGiros.master.designer.cs">
+      <DependentUpon>frmMenuGiros.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuMatCalle.master.cs">
+      <DependentUpon>frmMenuMatCalle.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuMatCalle.master.designer.cs">
+      <DependentUpon>frmMenuMatCalle.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuMunicipios.master.cs">
+      <DependentUpon>FrmMenuMunicipios.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuMunicipios.master.designer.cs">
+      <DependentUpon>FrmMenuMunicipios.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuSocioe.master.cs">
+      <DependentUpon>frmMenuSocioe.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuSocioe.master.designer.cs">
+      <DependentUpon>frmMenuSocioe.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuMarcasMedidor.master.cs">
+      <DependentUpon>MstMenuMarcasMedidor.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuMarcasMedidor.master.designer.cs">
+      <DependentUpon>MstMenuMarcasMedidor.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\frmMenuOficinas.master.cs">
+      <DependentUpon>frmMenuOficinas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\frmMenuOficinas.master.designer.cs">
+      <DependentUpon>frmMenuOficinas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuNoUsuario.master.cs">
+      <DependentUpon>FrmMenuNoUsuario.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuNoUsuario.master.designer.cs">
+      <DependentUpon>FrmMenuNoUsuario.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuRegiones.master.cs">
+      <DependentUpon>FrmMenuRegiones.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuRegiones.master.designer.cs">
+      <DependentUpon>FrmMenuRegiones.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenutipoCalles.master.cs">
+      <DependentUpon>frmMenutipoCalles.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenutipoCalles.master.designer.cs">
+      <DependentUpon>frmMenutipoCalles.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoContrato.master.cs">
+      <DependentUpon>frmMenuTipoContrato.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoContrato.master.designer.cs">
+      <DependentUpon>frmMenuTipoContrato.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoDescuentos.master.cs">
+      <DependentUpon>frmMenuTipoDescuentos.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuTipoDescuentos.master.designer.cs">
+      <DependentUpon>frmMenuTipoDescuentos.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuCaracter.master.cs">
+      <DependentUpon>FrmMenuCaracter.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\FrmMenuCaracter.master.designer.cs">
+      <DependentUpon>FrmMenuCaracter.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuComunidadesMaster.master.cs">
+      <DependentUpon>frmMenuComunidadesMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuComunidadesMaster.master.designer.cs">
+      <DependentUpon>frmMenuComunidadesMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuUbiMed.master.cs">
+      <DependentUpon>frmMenuUbiMed.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmMenuUbiMed.master.designer.cs">
+      <DependentUpon>frmMenuUbiMed.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmTipoServicio.master.cs">
+      <DependentUpon>frmTipoServicio.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frmTipoServicio.master.designer.cs">
+      <DependentUpon>frmTipoServicio.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frrMenutipoMed.master.cs">
+      <DependentUpon>frrMenutipoMed.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\frrMenutipoMed.master.designer.cs">
+      <DependentUpon>frrMenutipoMed.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuRutas.master.cs">
+      <DependentUpon>MstMenuRutas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuRutas.master.designer.cs">
+      <DependentUpon>MstMenuRutas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuServicio.master.cs">
+      <DependentUpon>MstMenuServicio.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Padron\MstMenuServicio.master.designer.cs">
+      <DependentUpon>MstMenuServicio.master</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\CtlMenuUsuariosSist.ascx.cs">
+      <DependentUpon>CtlMenuUsuariosSist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Sistema\CtlMenuUsuariosSist.ascx.designer.cs">
+      <DependentUpon>CtlMenuUsuariosSist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\MstMenuUsuariosSist.master.cs">
+      <DependentUpon>MstMenuUsuariosSist.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\MstMenuUsuariosSist.master.designer.cs">
+      <DependentUpon>MstMenuUsuariosSist.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\MtrMenuCatCajas.master.cs">
+      <DependentUpon>MtrMenuCatCajas.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\MenuCatologos\Sistema\MtrMenuCatCajas.master.designer.cs">
+      <DependentUpon>MtrMenuCatCajas.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuCatalogoGeo.master.cs">
+      <DependentUpon>FrmMenuCatalogoGeo.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuCatalogoGeo.master.designer.cs">
+      <DependentUpon>FrmMenuCatalogoGeo.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuPad.master.cs">
+      <DependentUpon>FrmMenuPad.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuPad.master.designer.cs">
+      <DependentUpon>FrmMenuPad.master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuRepPad.master.cs">
+      <DependentUpon>FrmMenuRepPad.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Padron\FrmMenuRepPad.master.designer.cs">
+      <DependentUpon>FrmMenuRepPad.master</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Catalogos\Cis\AltaCis.aspx.cs">
+      <DependentUpon>AltaCis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Catalogos\Cis\AltaCis.aspx.designer.cs">
+      <DependentUpon>AltaCis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Empresa\Wbflistarempresa.aspx.cs">
+      <DependentUpon>Wbflistarempresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Empresa\Wbflistarempresa.aspx.designer.cs">
+      <DependentUpon>Wbflistarempresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Empresa\WbfRegistrarempresa.aspx.cs">
+      <DependentUpon>WbfRegistrarempresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Empresa\WbfRegistrarempresa.aspx.designer.cs">
+      <DependentUpon>WbfRegistrarempresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Exportar.aspx.cs">
+      <DependentUpon>Exportar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Exportar.aspx.designer.cs">
+      <DependentUpon>Exportar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Importar.aspx.cs">
+      <DependentUpon>Importar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Importar.aspx.designer.cs">
+      <DependentUpon>Importar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Ordenes .aspx.cs">
+      <DependentUpon>Ordenes .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Lecturas\Ordenes .aspx.designer.cs">
+      <DependentUpon>Ordenes .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PaginasMaestras\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasMaestras\Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasMaestras\Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controles\Catalogos\Configuracion\" />
+    <Folder Include="Controles\NewFolder1\" />
+    <Folder Include="Controles\Paginas\Configuracion\" />
+    <Folder Include="Controles\Paginas\Facturacion\" />
+    <Folder Include="PaginasMaestras\Facturacion\" />
+    <Folder Include="PaginasMaestras\Gis\" />
+    <Folder Include="PaginasMaestras\Solicitudes\" />
+    <Folder Include="Paginas\Caja\" />
+    <Folder Include="Paginas\Catalogos\Cfdi\" />
+    <Folder Include="Paginas\Catalogos\Configuracion\" />
+    <Folder Include="Paginas\Catalogos\Empresa\" />
+    <Folder Include="Paginas\Catalogos\Lecturas\" />
+    <Folder Include="Paginas\Catalogos\Padron\" />
+    <Folder Include="Paginas\Catalogos\Sistema\" />
+    <Folder Include="Paginas\Cis\" />
+    <Folder Include="Paginas\Conceptos\" />
+    <Folder Include="Paginas\Configuracion\" />
+    <Folder Include="Paginas\Facturacion\" />
+    <Folder Include="Paginas\Padron\" />
+    <Folder Include="Paginas\Sistema\" />
+    <Folder Include="Reportes\Catalogos\Cfdi\" />
+    <Folder Include="Reportes\Catalogos\Cis\" />
+    <Folder Include="Reportes\Catalogos\Conceptos\" />
+    <Folder Include="Reportes\Catalogos\Lecturas\" />
+    <Folder Include="Reportes\Catalogos\Padron\" />
+    <Folder Include="Reportes\Catalogos\Sistema\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57055</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57055/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

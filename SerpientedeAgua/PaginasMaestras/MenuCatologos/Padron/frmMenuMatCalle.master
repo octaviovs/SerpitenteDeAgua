@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuMatCalle.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.MenuCatologos.Padron.frmMenuMatCalle" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/cntlMenuMatCalle.ascx" tagname="cntlMenuMatCalle" tagprefix="uc1" %>
+<%@ Register Src="~/Controles/Catalogos/Padron/cntlMenuMatCalle.ascx" TagPrefix="uc2" TagName="cntlMenuMatCalle" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <uc2:cntlMenuMatCalle runat="server" id="cntlMenuMatCalle" />
+        </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+

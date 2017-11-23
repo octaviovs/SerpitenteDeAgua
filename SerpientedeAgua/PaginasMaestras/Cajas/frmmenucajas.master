@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmmenucajas.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Cajas.frmmenucajas" %>
+<%@ Register src="../../Controles/Paginas/Cajas/Cntmenucajas.ascx" tagname="Cntmenucajas" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:Cntmenucajas ID="Cntmenucajas1" runat="server" />
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>

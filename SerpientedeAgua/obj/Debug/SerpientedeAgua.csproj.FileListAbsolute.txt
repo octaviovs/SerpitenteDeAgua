@@ -1,0 +1,171 @@
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\ApplicationInsights.config
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\csc.exe
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\System.Collections.Immutable.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\vbc.exe
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\VBCSCompiler.exe
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\roslyn\VBCSCompiler.exe.config
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.dll.config
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.pdb
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Antlr3.Runtime.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\AspNet.ScriptManager.bootstrap.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.SqlServer.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Web.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.WindowsServer.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ApplicationInsights.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Google.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Web.Infrastructure.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Newtonsoft.Json.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Owin.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Optimization.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Providers.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\WebGrease.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Web.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.WindowsServer.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ApplicationInsights.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Optimization.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Antlr3.Runtime.pdb
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Newtonsoft.Json.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.SqlServer.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Providers.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Google.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.csprojResolveAssemblyReference.cache
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.dll
+c:\users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.pdb
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Net.Http.Formatting.dll
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.dll
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.WebHost.dll
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Net.Http.Formatting.xml
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.xml
+C:\Users\israel\documents\visual studio 2015\Projects\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.WebHost.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\ApplicationInsights.config
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\csc.exe
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\vbc.exe
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\VBCSCompiler.exe
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.dll.config
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\SerpientedeAgua.pdb
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Antlr3.Runtime.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.SqlServer.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Web.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ApplicationInsights.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Newtonsoft.Json.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Owin.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Net.Http.Formatting.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.WebHost.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Optimization.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Providers.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\WebGrease.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.Web.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.ApplicationInsights.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Net.Http.Formatting.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Http.WebHost.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Optimization.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Antlr3.Runtime.pdb
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Newtonsoft.Json.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\EntityFramework.SqlServer.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\System.Web.Providers.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.csprojResolveAssemblyReference.cache
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.csproj.CoreCompileInputs.cache
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.dll
+C:\Users\octav\Desktop\SerpientedeAgua\SerpientedeAgua\obj\Debug\SerpientedeAgua.pdb

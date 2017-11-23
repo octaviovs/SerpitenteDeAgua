@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmTipoServicio.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frmTipoServicio" %>
+<%@ Register src="../../Controles/Catalogos/Padron/CntnTipoServicio.ascx" tagname="CntnTipoServicio" tagprefix="uc1" %>
+<%@ Register src="../../Controles/Paginas/Padron/CntTipoServicio.ascx" tagname="CntTipoServicio" tagprefix="uc2" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/CntnTipoServicio.ascx" tagname="CntnTipoServicio" tagprefix="uc3" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc3:CntnTipoServicio ID="CntnTipoServicio1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

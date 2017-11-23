@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuGiros.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frmMenuGiros" %>
+<%@ Register src="../../Controles/Catalogos/Padron/ctnMenuGiros.ascx" tagname="ctnMenuGiros" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/ctnMenuGiros.ascx" tagname="ctnMenuGiros" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <uc2:ctnMenuGiros ID="ctnMenuGiros1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+

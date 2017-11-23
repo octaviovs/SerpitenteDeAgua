@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frrMenutipoMed.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Padron.frrMenutipoMed" %>
+<%@ Register src="../../Controles/Catalogos/Padron/ctnMenutipoMed.ascx" tagname="ctnMenutipoMed" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Padron/ctnMenutipoMed.ascx" tagname="ctnMenutipoMed" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc2:ctnMenutipoMed ID="ctnMenutipoMed1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

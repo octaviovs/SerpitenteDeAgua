@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="MstMenuFormadepago.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.MenuCatologos.Cfdi.MstMenuFormadepago" %>
+<%@ Register src="../../../Controles/Catalogos/Cfdi/CntMenuFormasdepago.ascx" tagname="CntMenuFormasdepago" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc1:CntMenuFormasdepago ID="CntMenuFormasdepago1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

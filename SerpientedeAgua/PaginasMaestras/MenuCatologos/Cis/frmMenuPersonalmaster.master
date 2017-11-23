@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PaginasMaestras/Site.Master" AutoEventWireup="true" CodeBehind="frmMenuPersonalmaster.master.cs" Inherits="SerpientedeAgua.PaginasMaestras.Cis.frmMenuPersonalmaster" %>
+<%@ Register src="../../Controles/Catalogos/Cis/ctnMenuPersonal.ascx" tagname="ctnMenuPersonal" tagprefix="uc1" %>
+<%@ Register src="../../../Controles/Catalogos/Cis/ctnMenuPersonal.ascx" tagname="ctnMenuPersonal" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <uc2:ctnMenuPersonal ID="ctnMenuPersonal1" runat="server" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
