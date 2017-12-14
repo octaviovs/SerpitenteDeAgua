@@ -31,7 +31,7 @@ namespace SerpientedeAgua.Controles.Catalogos.Cis
         {
             
             string idDepartamento = TextBoxIdDepartamento.Text;
-            string Descripcion = TextBoxIdDepartamento.Text;
+            string Descripcion = TextBoxDescripcion.Text;
             string responsable = TextBoxResponsable.Text;
             string idDireccion = DropDownListIdDireccion.SelectedValue;
             string IdEmpresa = (string)(Session["Empresa"]);

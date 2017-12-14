@@ -10,7 +10,7 @@
    
         
         <asp:ButtonField ButtonType="Button" CommandName="borrar" HeaderText="borrar" ShowHeader="True" Text="borrar" />
-        
+         <asp:ButtonField ButtonType="Button" CommandName="modificar" HeaderText="modificar" ShowHeader="True" Text="modificar" />
    
         
     </Columns>

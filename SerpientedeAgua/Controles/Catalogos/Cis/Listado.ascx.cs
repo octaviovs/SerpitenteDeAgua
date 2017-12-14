@@ -47,7 +47,23 @@ namespace SerpientedeAgua.Controles.Catalogos.Cis
 
             if (e.CommandName == "modificar")
             {
+                GridViewRow FilaSeccionado;
+                int index = Convert.ToInt32(e.CommandArgument);
+                FilaSeccionado = GridView1.Rows[index];
+             
+
+                string Id_departamento = FilaSeccionado.Cells[0].Text;
+                string Descripcion = FilaSeccionado.Cells[1].Text;
+                string Responsable = FilaSeccionado.Cells[2].Text;
+                string id_direccion = FilaSeccionado.Cells[3].Text;
+                string Id_empresa = FilaSeccionado.Cells[4].Text;
+
+
+                Response.Redirect("~/Paginas/Catalogos/Cis/ModificacionCis.aspx?Id_departamento=" 
+                    +Id_departamento + "&Descripcion="+Descripcion+ "&Responsable="+Responsable+ "&id_direccion="+id_direccion+ "&Id_empresa="+Id_empresa);
+
                 
+
             }
         }
 

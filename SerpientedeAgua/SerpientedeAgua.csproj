@@ -223,6 +223,7 @@
     <Content Include="Controles\Catalogos\Cis\CtnMenuCIS.ascx" />
     <Content Include="Controles\Catalogos\Cis\ctnMenuPersonal.ascx" />
     <Content Include="Controles\Catalogos\Cis\Listado.ascx" />
+    <Content Include="Controles\Catalogos\Cis\ModificarCis.ascx" />
     <Content Include="Controles\Catalogos\Conceptos\CtnMenuCargos.ascx" />
     <Content Include="Controles\Catalogos\Conceptos\CtnMenuContable.ascx" />
     <Content Include="Controles\Catalogos\Lecturas\CntMenuLecturista.ascx" />
@@ -362,6 +363,7 @@
     <Content Include="images\tlalineas.png" />
     <Content Include="Paginas\Catalogos\Cis\AltaCis.aspx" />
     <Content Include="Paginas\Catalogos\Cis\ListadoCis.aspx" />
+    <Content Include="Paginas\Catalogos\Cis\ModificacionCis.aspx" />
     <Content Include="Paginas\Empresa\Wbflistarempresa.aspx" />
     <Content Include="Paginas\Empresa\WbfRegistrarempresa.aspx" />
     <Content Include="Paginas\Lecturas\Exportar.aspx" />
@@ -585,6 +587,13 @@
     </Compile>
     <Compile Include="Controles\Catalogos\Cis\Listado.ascx.designer.cs">
       <DependentUpon>Listado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\ModificarCis.ascx.cs">
+      <DependentUpon>ModificarCis.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Cis\ModificarCis.ascx.designer.cs">
+      <DependentUpon>ModificarCis.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Catalogos\Conceptos\CtnMenuCargos.ascx.cs">
       <DependentUpon>CtnMenuCargos.ascx</DependentUpon>
@@ -1297,6 +1306,13 @@
     </Compile>
     <Compile Include="Paginas\Catalogos\Cis\ListadoCis.aspx.designer.cs">
       <DependentUpon>ListadoCis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Catalogos\Cis\ModificacionCis.aspx.cs">
+      <DependentUpon>ModificacionCis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Catalogos\Cis\ModificacionCis.aspx.designer.cs">
+      <DependentUpon>ModificacionCis.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Empresa\Wbflistarempresa.aspx.cs">
       <DependentUpon>Wbflistarempresa.aspx</DependentUpon>
